@@ -4,15 +4,14 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'eslint:all',
-    'standard',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-    'plugin:jest/recommended',
-    'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
+    'airbnb',
+    'airbnb/hooks',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -25,12 +24,21 @@ module.exports = {
     sourceType: 'module',
     tsconfigRootDir: __dirname,
   },
-  plugins: ['@typescript-eslint', 'import', 'jsx-a11y', 'react', 'react-hooks'],
+  plugins: [
+    '@typescript-eslint',
+    'import',
+    'jsx-a11y',
+    'prefer-arrow',
+    'react',
+    'react-hooks',
+  ],
   root: true,
   rules: {
     // occur error in `import React from 'react'` with react-scripts 4.0.1
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': ['error'],
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+    ],
     'lines-between-class-members': [
       'error',
       'always',
@@ -55,11 +63,11 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
-        vars: 'all',
-        args: 'after-used',
-        argsIgnorePattern: '_',
-        ignoreRestSiblings: false,
-        varsIgnorePattern: '_',
+        'vars': 'all',
+        'args': 'after-used',
+        'argsIgnorePattern': '_',
+        'ignoreRestSiblings': false,
+        'varsIgnorePattern': '_',
       },
     ],
     'import/extensions': [
@@ -70,6 +78,14 @@ module.exports = {
         jsx: 'never',
         ts: 'never',
         tsx: 'never',
+      },
+    ],
+    'prefer-arrow/prefer-arrow-functions': [
+      'error',
+      {
+        disallowPrototype: true,
+        singleReturnOnly: false,
+        classPropertiesAllowed: false,
       },
     ],
     'react/jsx-filename-extension': [
@@ -87,29 +103,16 @@ module.exports = {
       },
     ],
     'react/react-in-jsx-scope': 'off',
-    'sort-imports': [
-      'error',
-      {
-        ignoreCase: false,
-        ignoreDeclarationSort: true,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-        allowSeparatedGroups: false,
-      },
-    ],
   },
   overrides: [
     {
-      files: ['*.tsx'],
-      rules: {
+      'files': ['*.tsx'],
+      'rules': {
         'react/prop-types': 'off',
       },
     },
   ],
   settings: {
-    react: {
-      version: 'detect',
-    },
     'import/resolver': {
       node: {
         paths: ['src'],
