@@ -18,6 +18,13 @@ h2 {
   background-color: transparent;
 }
 
+h3 {
+  font-size: 26px !important;
+  font-weight: 100;
+  color: white;
+  background-color: transparent;
+}
+
 p {
   font-size: 16px !important;
   color: #727782;
