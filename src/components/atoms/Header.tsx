@@ -47,7 +47,7 @@ const itemContent = css`
 const item = css`
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin: 20px;
+  margin: 0 20px;
   font-size: 1.1rem;
 `;
 
@@ -56,7 +56,7 @@ const Header: VFC = () => (
     <header css={header}>
       <div css={headerContent}>
         <Link to="/" css={icon}>
-          <h1>HashCloak</h1>
+          <h2>HashCloak</h2>
         </Link>
         <div css={itemContent}>
           <Link to="/" css={item}>

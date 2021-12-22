@@ -4,42 +4,67 @@ import { VFC } from 'react';
 
 import { jsx, css } from '@emotion/react';
 
-const headerContent = css`
+const mainVisual = css`
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  margin: 80px 0;
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
+`;
+const texts = css`
+  color: white;
+  position: relative;
+  width: 50%;
   @media (max-width: 680px) {
     flex-direction: column;
   }
 `;
 const image = css`
-  width: 50%;
+  width: 65%;
+  opacity: 0.2;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
+`;
+const subTitle = css`
+  line-height: 0.9em;
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
+`;
+const caption = css`
+  margin: 20px 0;
+  line-height: 1.1em;
   @media (max-width: 680px) {
     flex-direction: column;
   }
 `;
 
 const MainVisual: VFC = () => (
-  <div>
-    <div css={headerContent}>
-      <img
-        src="https://hashcloak.com/graphics/hashcloak-ice.png"
-        alt="main-visual"
-        css={image}
-      />
-      <div>
-        <h1>Privacy</h1>
-        <h1>Scalability</h1>
-        <h1>Distributed Systems</h1>
-        <h1>HashCloak</h1>
-      </div>
+  <div css={mainVisual}>
+    <div css={texts}>
+      <h1>HashCloak</h1>
+      <h2 css={subTitle}>Privacy</h2>
+      <h2 css={subTitle}>Scalability</h2>
+      <h2 css={subTitle}>Distributed Systems</h2>
+      <p css={caption}>
+        Hashcloak is an independent research lab that targets problems
+        surrounding privacy-preserving technologies and blockchain
+        infrastructure design.
+      </p>
     </div>
-    <p>
-      Hashcloak is an independent research lab that targets problems surrounding
-      privacy-preserving technologies and blockchain infrastructure design.
-    </p>
+    <img
+      src="https://hashcloak.com/graphics/hashcloak-ice.png"
+      alt="main-visual"
+      css={image}
+    />
   </div>
 );
 
