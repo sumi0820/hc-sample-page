@@ -8,10 +8,15 @@ import { Container } from 'semantic-ui-react';
 const container = css`
   margin: 50px;
 `;
+const header = css`
+  @media (max-width: 770px) {
+    margin-bottom: 20px;
+  }
+`;
 
 const Contact: VFC = () => (
   <Container css={container}>
-    <Container text textAlign="center">
+    <Container text textAlign="center" css={header}>
       <h2>Contact</h2>
       <p>Schedule a free 30 minute consultation session</p>
     </Container>

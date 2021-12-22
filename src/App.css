@@ -31,10 +31,11 @@ p {
   background-color: transparent;
 }
 
-@media screen and(max-width: 770px) {
+@media (max-width: 770px) {
   h1 {
     font-size: 48px !important;
     font-weight: 300;
+    text-shadow: 1px 1px 3px #727782;
   }
 
   h2 {

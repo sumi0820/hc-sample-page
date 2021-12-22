@@ -7,9 +7,16 @@ import { Container, Grid } from 'semantic-ui-react';
 const container = css`
   margin: 50px;
   width: 100%;
+  @media (max-width: 770px) {
+    display: block;
+    margin: 20px 0;
+  }
 `;
 const header = css`
   margin-bottom: 30px;
+  @media (max-width: 770px) {
+    margin-bottom: 10px;
+  }
 `;
 const images = css`
   margin: 40px 0 !important;
@@ -34,6 +41,10 @@ const fuelLogo = css`
   padding-left: 20px;
   margin-right: 45px;
 `;
+const binance = css`
+  width: 70%;
+  height: 80px;
+`;
 const image = css`
   max-width: 50%;
   height: 80px;
@@ -43,7 +54,8 @@ const Clients: VFC = () => (
   <Container css={container}>
     <Container text textAlign="center" css={header}>
       <h2>Clients and Research Supporters</h2>
-      <Grid columns={2} stackable css={images}>
+
+      <Grid columns={2} stackable css={images} textAlign="center">
         <Grid.Row>
           <Grid.Column>
             <div css={fuelContainer}>
@@ -67,7 +79,7 @@ const Clients: VFC = () => (
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/1/12/Binance_logo.svg"
               alt="binance"
-              css={image}
+              css={binance}
             />
           </Grid.Column>
           <Grid.Column>

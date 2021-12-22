@@ -9,6 +9,9 @@ import { jsx, css } from '@emotion/react';
 const container = css`
   margin: 50px;
   width: 100%;
+  @media (max-width: 770px) {
+    margin: 20px 0;
+  }
 `;
 const header = css`
   margin-bottom: 30px;
