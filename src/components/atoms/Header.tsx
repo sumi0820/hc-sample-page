@@ -1,14 +1,18 @@
 // /** @jsxRuntime classic */
 // /** @jsx jsx */
 import { Link } from 'react-router-dom';
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { jsx, css } from '@emotion/react';
-import { Menu, Sticky } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
+import Burger from './Burger';
 
 const header = css`
-  z-index: 3;
   background-color: rgba(26, 36, 44, 0.9) !important;
-  @media (max-width: 770px) {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+  @media (max-width: 980px) {
     h2 {
       font-size: 24px !important;
     }
@@ -17,7 +21,13 @@ const header = css`
 
 const items = css`
   background-color: transparent;
-  @media (max-width: 770px) {
+  margin-left: 20% !important;
+  a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2fb3ff;
+  }
+  @media (max-width: 980px) {
     display: none !important;
   }
 `;
@@ -27,14 +37,14 @@ const item = css`
 `;
 
 const Header: FC = () => (
-  <Sticky>
+  <>
     <Menu css={header}>
       <Menu.Item>
         <Link to="/">
           <h2>HashCloak</h2>
         </Link>
       </Menu.Item>
-      <Menu.Menu position="right" css={items}>
+      <Menu.Menu css={items}>
         <Menu.Item>
           <Link to="/" css={item}>
             Services
@@ -62,6 +72,7 @@ const Header: FC = () => (
         </Menu.Item>
       </Menu.Menu>
     </Menu>
-  </Sticky>
+    <Burger />
+  </>
 );
 export default Header;

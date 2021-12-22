@@ -1,0 +1,70 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  top: 15px;
+  right: 36px;
+  width: 36px;
+  height: 30px;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+
+.bm-menu {
+  padding: 2.4em 2.5em 0;
+  border: 5px solid #2fb3ff;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  text-align: center;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-flex;
+}
+
+/* Styling of overlay */
+
+.menu-item {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 500px) and (max-width: 980px) {
+  .menu-item {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+@media (min-width: 980px) {
+  .bm-burger-bars,
+  .bm-burger-button {
+    display: none !important;
+  }
+}

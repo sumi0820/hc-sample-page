@@ -11,6 +11,10 @@ const mainVisual = css`
   flex-direction: row;
   align-items: center;
   position: relative;
+  @media (max-width: 980px) {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
   @media (max-width: 770px) {
     display: none;
   }
@@ -43,10 +47,12 @@ const image = css`
 
 const subTitle = css`
   line-height: 0.9em;
+  @media (max-width: 980px) {
+    font-size: px !important;
+  }
   @media (max-width: 770px) {
     line-height: 0.5em;
     text-shadow: 1px 1px 2px white;
-
   }
 `;
 
@@ -67,7 +73,8 @@ const mbContainer = css`
   display: none !important;
   @media (max-width: 769px) {
     display: block !important;
-    margin: 20px 0;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 `;
 const mbImage = css`
