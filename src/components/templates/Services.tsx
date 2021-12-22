@@ -3,29 +3,52 @@
 import { VFC } from 'react';
 import { jsx, css } from '@emotion/react';
 
-const headerContent = css`
+const container = css`
   width: 100%;
   max-width: 1600px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
+`;
+
+const services = css`
+  text-align: center;
+  margin: 100px 0;
+  z-index: 1;
+  background-color: transparent;
   @media (max-width: 680px) {
     flex-direction: column;
   }
 `;
 
 const image = css`
-  width: 50%;
+  opacity: 0.2;
+  hight: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5em,
+    black calc(100% - 1.5em),
+    transparent
+  );
   @media (max-width: 680px) {
     flex-direction: column;
   }
 `;
 
-const Service: VFC = () => (
-  <div css={headerContent}>
-    <div>
-      <h1>Services</h1>
+const Services: VFC = () => (
+  <div css={container}>
+    <div css={services}>
+      <h2>Services</h2>
       <p>Smart contract audits</p>
       <p>Privacy audits</p>
       <p>Cryptographic implementation audits</p>
@@ -40,4 +63,4 @@ const Service: VFC = () => (
   </div>
 );
 
-export default Service;
+export default Services;

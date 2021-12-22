@@ -10,38 +10,49 @@ const mainVisual = css`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 80px 0;
+  position: relative;
   @media (max-width: 680px) {
     flex-direction: column;
   }
 `;
+
 const texts = css`
   color: white;
-  position: relative;
   width: 50%;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
   @media (max-width: 680px) {
     flex-direction: column;
   }
 `;
 const image = css`
-  width: 65%;
+  width: 80%;
   opacity: 0.2;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
+  margin-left: 400px;
+  z-index: 0;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5em,
+    black calc(100% - 1.5em),
+    transparent
+  );
   @media (max-width: 680px) {
     flex-direction: column;
   }
 `;
+
 const subTitle = css`
   line-height: 0.9em;
   @media (max-width: 680px) {
     flex-direction: column;
   }
 `;
+
 const caption = css`
-  margin: 20px 0;
-  line-height: 1.1em;
+  margin: 25px 0;
+  line-height: 1.2em;
   @media (max-width: 680px) {
     flex-direction: column;
   }
