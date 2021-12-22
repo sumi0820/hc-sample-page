@@ -65,7 +65,7 @@ const Blogs: VFC = () => (
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-        <Grid.Column css={card}>
+          <Grid.Column css={card}>
             <Link to="/">
               <img
                 src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-news-news-kiranshastry-lineal-kiranshastry-1.png"

@@ -23,6 +23,7 @@
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
+  "homepage": "https://sumi0820.github.io/hc-sample-page/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -37,7 +38,8 @@
     "lint:conflict": "eslint-config-prettier 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:style": "stylelint 'src/**/*.{css,less,sass,scss}'",
     "lint:style:fix": "stylelint --fix 'src/**/*.{css,less,sass,scss}'",
-    "preinstall": "typesync || :"
+    "preinstall": "typesync || :",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -72,6 +74,7 @@
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "4.2.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-recess-order": "^2.5.0",
