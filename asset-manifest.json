@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/hc-sample-page/static/css/main.98400e6e.chunk.css",
+    "main.js": "/hc-sample-page/static/js/main.a6400eab.chunk.js",
+    "main.js.map": "/hc-sample-page/static/js/main.a6400eab.chunk.js.map",
+    "runtime-main.js": "/hc-sample-page/static/js/runtime-main.3988d4a4.js",
+    "runtime-main.js.map": "/hc-sample-page/static/js/runtime-main.3988d4a4.js.map",
+    "static/css/2.e5d25897.chunk.css": "/hc-sample-page/static/css/2.e5d25897.chunk.css",
+    "static/js/2.00a6bd59.chunk.js": "/hc-sample-page/static/js/2.00a6bd59.chunk.js",
+    "static/js/2.00a6bd59.chunk.js.map": "/hc-sample-page/static/js/2.00a6bd59.chunk.js.map",
+    "static/js/3.b52218a8.chunk.js": "/hc-sample-page/static/js/3.b52218a8.chunk.js",
+    "static/js/3.b52218a8.chunk.js.map": "/hc-sample-page/static/js/3.b52218a8.chunk.js.map",
+    "index.html": "/hc-sample-page/index.html",
+    "static/css/2.e5d25897.chunk.css.map": "/hc-sample-page/static/css/2.e5d25897.chunk.css.map",
+    "static/css/main.98400e6e.chunk.css.map": "/hc-sample-page/static/css/main.98400e6e.chunk.css.map",
+    "static/js/2.00a6bd59.chunk.js.LICENSE.txt": "/hc-sample-page/static/js/2.00a6bd59.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/hc-sample-page/static/media/outline-icons.ddae9b1b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3988d4a4.js",
+    "static/css/2.e5d25897.chunk.css",
+    "static/js/2.00a6bd59.chunk.js",
+    "static/css/main.98400e6e.chunk.css",
+    "static/js/main.a6400eab.chunk.js"
+  ]
+}
