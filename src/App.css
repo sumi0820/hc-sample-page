@@ -8,17 +8,20 @@ h1 {
   font-size: 72px !important;
   font-weight: 300;
   color: #2fb3ff;
+  background-color: transparent;
 }
 
 h2 {
   font-size: 48px !important;
   font-weight: 200;
   color: white;
+  background-color: transparent;
 }
 
 p {
   font-size: 16px !important;
   color: #727782;
+  background-color: transparent;
 }
 
 /* #root {
