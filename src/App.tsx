@@ -12,8 +12,8 @@ import './App.css';
 
 const App: VFC = () => (
   <>
-    <Header />
     <Container>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

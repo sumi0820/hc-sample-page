@@ -31,21 +31,28 @@ p {
   background-color: transparent;
 }
 
-/* #root {
-  max-width: 930px;
-  margin: 2.5em auto 0;
-} */
+@media screen and(max-width: 770px) {
+  h1 {
+    font-size: 48px !important;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 26px !important;
+    font-weight: 200;
+  }
+
+  h3 {
+    font-size: 16px !important;
+    font-weight: 100;
+  }
+
+  p {
+    font-size: 12px !important;
+  }
+}
 
 .container {
-  /* width: 700px !important; */
   max-width: none !important;
   font-size: 1rem !important;
 }
-
-/* .app-header {
-  padding: 20px;
-  margin-bottom: 4em;
-  color: white;
-  text-align: center;
-  background-color: #222;
-} */

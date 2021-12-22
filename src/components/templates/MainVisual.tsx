@@ -12,9 +12,30 @@ const mainVisual = css`
   flex-direction: row;
   align-items: center;
   position: relative;
-  /* @media (max-width: 680px) {
+  @media (max-width: 770px) {
     flex-direction: column;
-  } */
+    h1 {
+      font-size: 48px !important;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 26px !important;
+      font-weight: 200;
+    }
+
+    h3 {
+      font-size: 16px !important;
+      font-weight: 100;
+    }
+
+    p {
+      font-size: 12px !important;
+    }
+    background-image: url('https://hashcloak.com/graphics/hashcloak-ice.png');
+    background-size: contain !important;
+    background-repeat: no-repeat;
+  }
 `;
 
 const texts = css`
@@ -38,9 +59,8 @@ const image = css`
     black calc(100% - 1.5em),
     transparent
   );
-  /* @media (max-width: 680px) {
-    flex-direction: column;
-  } */
+  @media (max-width: 770px) {
+  }
 `;
 
 const subTitle = css`

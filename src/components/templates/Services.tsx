@@ -12,9 +12,30 @@ const container = css`
   justify-content: center;
   position: relative;
   overflow: hidden;
-  /* @media (max-width: 680px) {
+  @media (max-width: 770px) {
     flex-direction: column;
-  } */
+    h1 {
+      font-size: 48px !important;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 26px !important;
+      font-weight: 200;
+    }
+
+    h3 {
+      font-size: 16px !important;
+      font-weight: 100;
+    }
+
+    p {
+      font-size: 12px !important;
+    }
+    background-image: url('https://hashcloak.com/graphics/hc-contract.png');
+    background-size: contain !important;
+    background-repeat: no-repeat;
+  }
 `;
 
 const services = css`
