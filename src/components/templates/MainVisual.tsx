@@ -10,27 +10,25 @@ const mainVisual = css`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 50px;
-  /* position: relative; */
+  margin: 80px 0;
   @media (max-width: 680px) {
     flex-direction: column;
   }
 `;
 const texts = css`
-  /* position: absolute; */
   color: white;
-  /* position: relative; */
+  position: relative;
+  width: 50%;
   @media (max-width: 680px) {
     flex-direction: column;
   }
 `;
 const image = css`
-  width: 80%;
-  margin: 0 0 0 auto;
+  width: 65%;
   opacity: 0.2;
-  top: 500px;
-  left: 200px;
-  /* position: absolute; */
+  overflow: hidden;
+  position: absolute;
+  right: 0;
   @media (max-width: 680px) {
     flex-direction: column;
   }
@@ -43,6 +41,7 @@ const subTitle = css`
 `;
 const caption = css`
   margin: 20px 0;
+  line-height: 1.1em;
   @media (max-width: 680px) {
     flex-direction: column;
   }
