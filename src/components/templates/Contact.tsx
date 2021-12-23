@@ -6,7 +6,10 @@ import { InlineWidget } from 'react-calendly';
 import { Container } from 'semantic-ui-react';
 
 const container = css`
-  margin: 50px;
+  margin: 70px 0 !important;
+  @media (max-width: 770px) {
+    margin: 50px 0 !important;
+  }
 `;
 const header = css`
   @media (max-width: 770px) {

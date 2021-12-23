@@ -11,6 +11,7 @@ const mainVisual = css`
   flex-direction: row;
   align-items: center;
   position: relative;
+  margin: 50px 0;
   @media (max-width: 1200px) {
     margin-top: 70px;
     margin-bottom: 50px;

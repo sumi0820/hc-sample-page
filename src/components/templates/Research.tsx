@@ -7,25 +7,26 @@ import { Container, Grid } from 'semantic-ui-react';
 import { jsx, css } from '@emotion/react';
 
 const container = css`
-  margin: 50px;
+  margin: 70px 0 !important;
   width: 100%;
   @media (max-width: 770px) {
-    margin: 20px 0;
+    margin: 50px 0 !important;
   }
 `;
 const header = css`
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 `;
 const caption = css`
-  line-height: 0.4rem;
+  padding: 0 30%;
   @media (max-width: 770px) {
+    padding: 0;
     line-height: 1.1rem;
   }
 `;
 
 const Research: VFC = () => (
   <Container css={container}>
-    <Container text textAlign="center" css={header}>
+    <Container textAlign="center" css={header}>
       <h2>Research</h2>
       <p css={caption}>
         Here is a taste of the research we conduct and open problems we are

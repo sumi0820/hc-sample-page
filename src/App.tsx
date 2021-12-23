@@ -3,8 +3,6 @@ import { Route, Routes } from 'react-router';
 import { Container } from 'semantic-ui-react';
 
 import Home from 'components/pages/Home';
-// import Auth from 'components/pages/Auth';
-// import Others from 'components/pages/Others';
 import Header from 'components/atoms/Header';
 import Footers from 'components/atoms/Footer';
 

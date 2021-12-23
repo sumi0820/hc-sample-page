@@ -5,10 +5,11 @@ import { jsx, css } from '@emotion/react';
 import { Container, Grid } from 'semantic-ui-react';
 
 const container = css`
-  margin-top: 50px !important;
+  margin: 70px 0 !important;
   width: 100%;
   @media (max-width: 770px) {
     display: block;
+    margin: 50px 0 !important;
   }
 `;
 const header = css`

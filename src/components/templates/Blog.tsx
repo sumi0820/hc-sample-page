@@ -6,8 +6,11 @@ import { Container, Grid } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 const container = css`
-  margin: 50px;
+  margin: 70px 0 !important;
   width: 100%;
+  @media (max-width: 770px) {
+    margin: 50px 0 !important;
+  }
 `;
 const header = css`
   margin-bottom: 30px;
