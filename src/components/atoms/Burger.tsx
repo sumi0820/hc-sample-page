@@ -1,20 +1,54 @@
-import { VFC } from 'react';
+import { VFC, useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 import './Burger.css';
 
-const Burger: VFC = () => (
-  <>
-    <Menu right width="100%" disableAutoFocus>
-      <a id="home" className="menu-item" href="/">
-        Home
-      </a>
-      <a id="about" className="menu-item" href="/about">
-        About
-      </a>
-      <a id="contact" className="menu-item" href="/contact">
-        Contact
-      </a>
-    </Menu>
-  </>
-);
+const Burger: VFC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleIsOpen = () => setIsOpen(!isOpen);
+
+  return (
+    <>
+      <Menu
+        right
+        width="100%"
+        disableAutoFocus
+        isOpen={isOpen}
+        onOpen={handleIsOpen}
+        onClose={handleIsOpen}
+      >
+        <Link id="react-burger-cross-btn" className="menu-item" to="/">
+          <button type="button" onClick={() => setIsOpen(false)}>
+            Home
+          </button>
+        </Link>
+        <Link id="react-burger-cross-btn" className="menu-item" to="/">
+          <button type="button" onClick={() => setIsOpen(false)}>
+            Services
+          </button>
+        </Link>
+        <Link id="react-burger-cross-btn" className="menu-item" to="/">
+          <button type="button" onClick={() => setIsOpen(false)}>
+            Research
+          </button>
+        </Link>
+        <Link id="react-burger-cross-btn" className="menu-item" to="/">
+          <button type="button" onClick={() => setIsOpen(false)}>
+            Clients
+          </button>
+        </Link>
+        <Link id="react-burger-cross-btn" className="menu-item" to="/">
+          <button type="button" onClick={() => setIsOpen(false)}>
+            Blog and Newsletters
+          </button>
+        </Link>
+        <Link id="react-burger-cross-btn" className="menu-item" to="/">
+          <button type="button" onClick={() => setIsOpen(false)}>
+            Contact
+          </button>
+        </Link>
+      </Menu>
+    </>
+  );
+};
 export default Burger;

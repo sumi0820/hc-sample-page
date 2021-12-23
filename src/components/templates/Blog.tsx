@@ -40,7 +40,7 @@ const caption = css`
 const Blogs: VFC = () => (
   <Container css={container}>
     <Container text textAlign="center" css={header}>
-      <h2>Clients and Research Supporters</h2>
+      <h2>Blogs and Newsletters</h2>
       <Grid columns={2} stackable css={images} celled="internally">
         <Grid.Row>
           <Grid.Column css={card}>
