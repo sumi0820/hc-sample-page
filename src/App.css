@@ -8,6 +8,7 @@ h1 {
   font-size: 72px !important;
   font-weight: 300;
   color: #2fb3ff;
+  text-shadow: 1px 1px 3px #727782;
   background-color: transparent;
 }
 

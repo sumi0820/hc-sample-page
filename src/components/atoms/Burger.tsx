@@ -2,6 +2,7 @@ import { VFC, useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 import './Burger.css';
+import Sns from './Sns';
 
 const Burger: VFC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +48,7 @@ const Burger: VFC = () => {
             Contact
           </button>
         </Link>
+        <Sns />
       </Menu>
     </>
   );

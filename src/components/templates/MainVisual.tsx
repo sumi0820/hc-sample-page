@@ -4,6 +4,7 @@ import { VFC } from 'react';
 
 import { jsx, css } from '@emotion/react';
 import { Container } from 'semantic-ui-react';
+import Sns from 'components/atoms/Sns';
 
 const mainVisual = css`
   width: 100%;
@@ -69,17 +70,9 @@ const caption = css`
     width: 100%;
   }
 `;
-
-const icons = css`
-  display: flex;
-  }
-`;
 const sns = css`
-  margin: 0 20px;
-  width: 50px;
-  @media (max-width: 769px) {
-    width: 30px;
-  }
+  display: flex;
+  justify-content: start;
 `;
 
 const MainVisual: VFC = () => (
@@ -95,29 +88,8 @@ const MainVisual: VFC = () => (
           surrounding privacy-preserving technologies and blockchain
           infrastructure design.
         </p>
-        <div css={icons}>
-          <a
-            href="https://github.com/hashcloak"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"
-              alt="github"
-              css={sns}
-            />
-          </a>
-          <a
-            href="https://twitter.com/hashcloak"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="https://img.icons8.com/ios-glyphs/60/ffffff/twitter.png"
-              alt="twitter"
-              css={sns}
-            />
-          </a>
+        <div css={sns}>
+          <Sns />
         </div>
       </div>
       <img
