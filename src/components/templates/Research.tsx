@@ -18,14 +18,19 @@ const header = css`
 `;
 const caption = css`
   line-height: 0.4rem;
+  @media (max-width: 770px) {
+    line-height: 1.1rem;
+  }
 `;
 
 const Research: VFC = () => (
   <Container css={container}>
     <Container text textAlign="center" css={header}>
       <h2>Research</h2>
-      <p css={caption}>Here is a taste of the research we conduct</p>
-      <p css={caption}>and open problems we are currently tackling.</p>
+      <p css={caption}>
+        Here is a taste of the research we conduct and open problems we are
+        currently tackling.
+      </p>
     </Container>
     <Grid columns={2} stackable centered column>
       <Grid.Column>
